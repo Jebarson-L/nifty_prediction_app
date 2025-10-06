@@ -2,8 +2,12 @@ import pandas as pd
 
 def identify_price_action_levels(df: pd.DataFrame):
     """
-    Simple price action logic: detect support/resistance zones.
+    Basic Price Action Strategy:
+    Detect support and resistance zones using swing highs/lows.
     """
+    if 'Low' not in df.columns or 'High' not in df.columns or 'Date' not in df.columns:
+        return [], []
+
     support = []
     resistance = []
 
