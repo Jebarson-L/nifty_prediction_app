@@ -8,7 +8,7 @@ def fetch_data(symbol: str, period: str = "6mo", interval: str = "1d") -> pd.Dat
 
     df.reset_index(inplace=True)
 
-    # Ensure columns have consistent casing
-    df.columns = [col.capitalize() for col in df.columns]
+    # Fix: Ensure column names are strings before capitalize
+    df.columns = [str(col).capitalize() for col in df.columns]
 
     return df
