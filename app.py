@@ -14,6 +14,8 @@ df = fetch_data(symbol, period=period, interval=interval)
 
 if df is not None and not df.empty:
     st.subheader("Candlestick Chart with Price Action Levels")
+    st.write("Data columns:", df.columns)
+st.dataframe(df.head())
     support, resistance = identify_price_action_levels(df)
 
     fig = go.Figure(data=[go.Candlestick(
