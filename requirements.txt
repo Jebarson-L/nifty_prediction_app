@@ -3,4 +3,3 @@ yfinance
 pandas
 numpy
 plotly
-smartmoneyconcepts  # a library for SMC / ICT style indicators :contentReference[oaicite:0]{index=0}
