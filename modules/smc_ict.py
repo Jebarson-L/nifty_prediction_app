@@ -1,12 +1,12 @@
-from smartmoneyconcepts import smc
 import pandas as pd
 
 def compute_smc_signals(df: pd.DataFrame):
-   """
-    Dummy version — real SMC logic not included because of module error.
+    """
+    Dummy SMC/ICT function to avoid errors during deployment.
+    Replace with actual logic later.
     """
     return {
-        "order_blocks": order_blocks,
-        "fvg": fvg,
-        "structure": structure,
+        "order_blocks": [],
+        "fvg": [],
+        "structure": [],
     }
